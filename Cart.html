@@ -23,7 +23,7 @@
 
             }
             console.log(products,"products here")
-            var finalData = ""
+            var finalData = "";
             for(var i=0;i<products.length;i++){
                 finalData +=  `<div><img src='${products[i].proImage}' /> <br/> <h1>${products[i].proName}</h1><br/> <p>${products[i].proPrice}</p></div>`
             }
@@ -31,6 +31,6 @@
             divToAppendProducts.innerHTML = finalData;
         }
     </script>
-    
+
 </body>
 </html>

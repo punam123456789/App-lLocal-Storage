@@ -31,12 +31,12 @@ function register(event) {
                     }
                     Ls.push(userdata);
                     localStorage.setItem("Users", JSON.stringify(Ls))
-                    alert("Registration Successful")
-                    window.location.href="login.html"
-                    document.getElementById("username").value = ""
-                    document.getElementById("useremail").value = ""
-                    document.getElementById("userpassword").value = ""
-                    document.getElementById("userconfirmpassword").value = ""
+                    alert("Registration Successful");
+                    window.location.href="login.html";
+                    document.getElementById("username").value = "";
+                    document.getElementById("useremail").value = "";
+                    document.getElementById("userpassword").value = "";
+                    document.getElementById("userconfirmpassword").value = "";
                 }
                 else {
                     alert("Email aleready exist")
@@ -46,7 +46,9 @@ function register(event) {
                 alert("password not match");
             }
 
-        } else {
+        }
+         else 
+        {
             alert("password should  include 8 or more characters");
         }
     } else {
