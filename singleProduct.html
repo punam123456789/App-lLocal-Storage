@@ -14,6 +14,7 @@
             var structure = `<div id='singlePro'> <img src='${product.proImage}' /> <br/> <h1>${product.proName}</h1><br/> <p>${product.proPrice}</p><br/> <button onclick='addCart(${JSON.stringify(product)})'>Add to cart</button> </div>`
             console.log(structure, "here");
             divToAppendProduct.innerHTML = structure;
+            
         }
         function addCart(product){
             // alert("Adding to cart")
@@ -32,13 +33,14 @@
 
                     }
                     alert("product added to cart")
-                    window.location.href='./Cart.html'
+                    window.location.href='./Cart.html';
                 }
             }
             localStorage.setItem("Users",JSON.stringify(userData));
         }
     </script>
-    <style>
+
+       <style>
         #singleProduct {
             width: 100%;
         }
@@ -56,7 +58,6 @@
             height: 350px;
         }
     </style>
-</head>
 
 <body>
     <div id="singleProduct"></div>
