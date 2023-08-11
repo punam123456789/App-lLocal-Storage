@@ -7,14 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>multiple products</title>
     <style>
-        #products {
-            width: 100%;
-            border: 2px solid black;
-            display: flex;
-            justify-content: start;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+       
+       
 
         #products>div {
             width: 18%;
@@ -46,6 +40,7 @@
             }
 
             // console.log(finalData, "finalData here")
+           
 
             divToShowProducts.innerHTML = finalData;
 
@@ -53,8 +48,8 @@
 
         function redirect(product) {
             var singleProduct = JSON.stringify(product);
-            // console.log(s, " s here")
-            // alert("Working")
+            // console.log(s, " s here");
+            // alert("Working");
             localStorage.setItem("current-product", singleProduct);
             window.location.href = './singleProduct.html'
         }
